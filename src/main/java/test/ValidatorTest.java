@@ -5,13 +5,6 @@ import exceptions.WrongLoginException;
 import exceptions.WrongPasswordException;
 
 public class ValidatorTest {
-    public static void main(String[] args) {
-        testValidCredentials();
-        testInvalidLogin();
-        testInvalidPassword();
-        testNonMatchingPasswords();
-    }
-
     public static void testValidCredentials() {
         try {
             Validator.validateCredentials("java_skypro_go", "D_1hWiKjjP_9", "D_1hWiKjjP_9");
